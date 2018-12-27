@@ -156,7 +156,6 @@ public class PreviewPhotoActivity extends Activity {
                     public void onClick(DialogInterface dialog, int which) {
                         Bimp.deleteGroup(group_number);
                         back_bt.setText("全部删除");
-                        Bimp.current_group_number--;
                         Intent intent = new Intent("data.broadcast.action");
                         sendBroadcast(intent);
                         Intent intent1 = new Intent(PreviewPhotoActivity.this, Main.class);
